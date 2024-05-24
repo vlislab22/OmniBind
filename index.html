@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OmniBind</title>
+    <meta name="author" content="Yuanhuiyi Lyu">
+    <meta name="description" content="Project page of OmniBind">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="lab_logo.png">
+    <!-- Format -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="../format/app.css">
+    <link rel="stylesheet" href="../format/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="../format/app.js"></script>
+
+  </head>
+
+  <body style="text-align: center;">
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                OmniBind: Teach to Build Unequal-Scale Modality Interaction for  Omni-Bind of All<br /> 
+               
+            </h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+			<img src="./images/huiyi1.png" height="80px"><br>
+                        <a href="https://qc-ly.github.io/" >
+                           Yuanhuiyi Lyu
+                        </a>
+                        
+                        <br /> AI Thrust, HKUST(GZ)
+                        <br /> &nbsp &nbsp
+
+                    </li>
+
+                    <li>
+			<img src="./images/xu1.png" height="80px"><br>
+			<a href="https://zhengxujosh.github.io/" >
+                        Xu Zheng
+                      </a>
+                      <br /> AI Thrust, HKUST(GZ)
+                      <br /> &nbsp &nbsp
+                    </li>
+                <li>
+                    <img src="./images/kim.png" height="80px"><br>
+                    <a href="https://mcahny.github.io/" >
+                                Dahun Kim
+                                </a>
+                                <br /> Google DeepMind
+                                <br /> &nbsp &nbsp
+                            </li>
+
+                            <li>
+			    <img src="./images/Addision.png" height="80px"><br>
+                        <a href="https://addisonwang2013.github.io/vlislab/linwang.html">
+                           Addison Lin Wang
+                        </a>
+                        <br /> AI & CMA Thrust, HKUST(GZ) 
+			    <br/> Dept. of CSE, HKUST 
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- ##### Elements #####-->
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+			    <a href="">
+                            <img src="./images/arxiv.png" height="100px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+			    <!-- <a href="">
+                            <img src="./images/youtube_icon.jpg" height="100px"><br>
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li> -->
+                            <a href="">
+                            <img src="./images/github_icon.jpg" height="100px"><br>
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            
+                            <img src="./images/colab_icon.jpg" height="100px"><br>
+                                <h4><strong>Colab</strong></h4>
+                            </a>
+                        </li> -->
+ 
+
+<!--                         <li>
+                            <a href="https://github.com/jiazhou-garland/ELIP/blob/master/Appendix.pdf">
+                            <img src="./images/slide_icon.jpg" height="100px"><br>
+                                <h4><strong>Supp</strong></h4>
+                            </a>
+                        </li>                      -->
+                        <li>
+                            <a href="https://vlislab22.github.io/vlislab/">
+                            <img src="./images/lab_logo.png" height="100px"><br>
+                                <h4><strong>Vlislab</strong></h4>
+                            </a>
+                        </li>                       
+                      
+                    </ul>
+                </div>
+        </div>
+
+        <!-- ##### Abstract #####-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Research on multi-modal learning dominantly aligns the modalities in a unified space at training, and only a single one is taken for prediction at inference. However, for a real machine, e.g., a robot, sensors could be added or removed at any time. Thus, it is crucial to enable the machine to tackle the mismatch and unequal-scale (or data-scale imbalance) problems of modality combinations between training and inference. In this paper, we tackle these problems from a new perspective: "Modalities Help Modalities". Intuitively, we present OmniBind, a novel two-stage learning framework that can achieve any modality combinations and interaction. It involves teaching data-constrained, a.k.a, student, modalities (e.g., touch and thermal) to be aligned with the well-trained data-abundant, a.k.a, teacher, modalities (e.g., image and text). This subtly enables the adaptive fusion of any modalities to build a unified representation space for any combinations. Specifically, we propose Cross-modal Alignment Distillation (CAD) to address the unequal-scale problem between student and teacher modalities and effectively align student modalities into the teacher modalities' representation space in stage one. We then propose an Adaptive Fusion (AF) module to fuse any modality combinations and learn a unified representation space in stage two. To address the mismatch problem, we aggregate existing datasets and combine samples from different modalities by the same semantics. This way, we build the first dataset for training and evaluation that consists of teacher (image, text) and student (touch, thermal, event, point cloud, audio) modalities and enables omni-bind for any of them, e.g., (image, touch, and event). Extensive experiments on the recognition task show performance gains over prior arts by an average of 4.05 % on the arbitrary modality combination setting. It also achieves the state-of-the-art performance for a single modality, e.g., touch, with 4.34 % gain. Dataset and code will be available upon acceptance.
+                </p>
+            </div>
+
+            <!-- <div class="col-md-8 col-md-offset-2">
+                <video width="854" height="480" controls src="./images/demo.mp4" class="img-responsive" alt="vis_res" class="center"><br>        
+            </div> -->
+        </div>
+
+ 
+
+        <!-- ##### Results #####-->
+
+     <div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Overall framework of our OmniBind
+            </h3>
+		<p class="text-justify">
+			<strong>The overall framework of OmniBind.</strong> We propose a two-stage training approach. <strong>stage I</strong>: Aligning the student modalities via CAD module; <strong>stage II</strong>: Learning the unified representation space for any modality combination via AF module.
+		</p>
+            <img src="./images/OmniBind.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Results with the two-modality combinations.
+            </h3>
+            	<img src="./images/result_1.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Results with the combinations of three, four, and five modality.
+            </h3>
+            	<img src="./images/result_2.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Results on single-modality setting, including touch, event, and thermal modality.
+            </h3>
+            	<img src="./images/result_3.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                The t-SNE visualization of representation space. (a) without CAD and (b) with
+                CAD.
+            </h3>
+		<img src="./images/tsne.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<!-- ####      <div class="col-md-8 col-md-offset-2">
+          <h3>
+              Comparison on octree representations
+          </h3>
+          <p class="text-justify">
+            DOT shows the more compact structure of DOT, 
+            resulting in fewer ray intersections, explaining our significant rendering speed boost.
+
+          </p>
+		  <img src="./image/dot_cp.png" class="img-responsive" alt="vis_res" class="center"><br>
+    </div>   
+    <div class="col-md-8 col-md-offset-2">
+        <h3>
+            Comparison on visual quality and memory consumption
+        </h3>
+        <p class="text-justify">
+            DOT provides more details in complex regions, such as sharper reflections on windows and more evident edges on fences. 
+
+        </p>
+        <img src="./image/dot_cp2.png" class="img-responsive" alt="vis_res" class="center"><br>
+    </div>     
+    </div>
+
+
+		      
+    	<div class="row">      
+     <div class="col-md-8 col-md-offset-2">
+          <h3>
+              Demo 
+          </h3>   
+    </div>   
+      
+    <div class="col-md-8 col-md-offset-2">
+
+            <video width="800"  controls >
+                <source src="./video/dot.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>   
+    </div>          
+      </div>  ####-->
+   <!-- ##### BibTex #####-->
+    <hr>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                BibTeX
+            </h3>
+
+            <div class="row align-items-center">
+                <div class="col py-3">
+                    <pre class="border">             
+
+</pre>
+                    </div>
+                </div>
+              
+    
+          </div>
+          
+        </div>
+    </div>
+</body>
+</html>
